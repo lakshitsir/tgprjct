@@ -8,6 +8,7 @@ from pyrogram.types import Message
 from pyrogram.enums import ParseMode
 from fastapi import FastAPI
 import uvicorn
+import sys
 
 #loop
 try:
