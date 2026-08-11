@@ -16,7 +16,7 @@ OWNER_ID = 5421311764
 SLAVE_CHAT_ID = int(os.getenv("SLAVE_CHAT_ID", "-1004389908502"))
 
 # Approved Groups Whitelist
-APPROVED_GROUPS = {-1009876543210, -1001122334455}
+APPROVED_GROUPS = {-1004389908502}
 
 app = FastAPI()
 bot = Client("VercelBot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
