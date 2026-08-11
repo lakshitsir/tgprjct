@@ -9,6 +9,13 @@ from pyrogram.enums import ParseMode
 from fastapi import FastAPI
 import uvicorn
 
+#loop
+try:
+    asyncio.get_event_loop_policy().get_event_loop()
+except RuntimeError:
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
 # ================= CONFIGURATION =================
 API_ID = int(os.getenv("API_ID", "12345678"))
 API_HASH = os.getenv("API_HASH", "YOUR_API_HASH")
